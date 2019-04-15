@@ -4,8 +4,15 @@
 .border-bottom-grey {
   border-bottom: 1px solid lightgray;
 }
+.border {
+  border: solid 2px red;
+}
+body {
+  width: 1280px;
+  margin: 0 auto;
+}
 .top-bar {
-  width: 100%;
+  width: 1280px;
   display: flex;
   justify-content: center;
   align-items: none;
@@ -25,9 +32,14 @@
   letter-spacing: 1px;
   padding: 0 10px;
 }
-@media (min-width: 1200px) {
+@media (max-width: 1280px) {
   .top-bar .container {
-    width: 1200px;
+    width: 1280px;
+  }
+}
+@media (max-width: 500px) {
+  .top-bar .container {
+    width: 414px;
   }
 }
 .top-bar .container .container-left {
@@ -87,14 +99,24 @@
   width: 100%;
 }
 .welcome .title {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.welcome .title .mid {
   display: flex;
-  justify-content: none;
-  align-items: none;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  text-align: center;
+  width: 75%;
+  height: 75%;
+  top: 30%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+.welcome .title .center {
+  margin-top: 0;
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+}
+.welcome .title .bottom {
+  margin-top: 20%;
 }

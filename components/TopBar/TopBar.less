@@ -1,5 +1,5 @@
 .top-bar {
-  .width-100();
+  width: 1280px;
   .flex(center);
   position: fixed;
   height: 44px;
@@ -11,8 +11,11 @@
     color: white;
     letter-spacing: 1px;
     padding: 0 10px;
-    @media(min-width: 1200px){
-      width: 1200px;
+    @media(max-width: 1280px){
+      width: 1280px;
+    }
+    @media(max-width: 500px){
+      width: 414px;
     }
     .container-left {
       .flex(none, center);
