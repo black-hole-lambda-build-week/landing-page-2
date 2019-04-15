@@ -4,14 +4,15 @@
   position: fixed;
   height: 44px;
   background-color: Black;
+  z-index: 1;
   .container {
     .width-100();
     .flex();
     color: white;
     letter-spacing: 1px;
     padding: 0 10px;
-    @media(min-width: 1280px){
-      width: 1280px;
+    @media(min-width: 1200px){
+      width: 1200px;
     }
     .container-left {
       .flex(none, center);
@@ -30,7 +31,7 @@
     .container-center {
       .flex(center, center);
       flex: 3;
-      font-size: 9px;
+      font-size: 15px;
       span {
         cursor: pointer;
         margin-right: 5%;

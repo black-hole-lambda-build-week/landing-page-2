@@ -13,6 +13,7 @@
   position: fixed;
   height: 44px;
   background-color: Black;
+  z-index: 1;
 }
 .top-bar .container {
   width: 100%;
@@ -24,9 +25,9 @@
   letter-spacing: 1px;
   padding: 0 10px;
 }
-@media (min-width: 1280px) {
+@media (min-width: 1200px) {
   .top-bar .container {
-    width: 1280px;
+    width: 1200px;
   }
 }
 .top-bar .container .container-left {
@@ -52,7 +53,7 @@
   align-items: center;
   flex-direction: row;
   flex: 3;
-  font-size: 9px;
+  font-size: 15px;
 }
 .top-bar .container .container-center span {
   cursor: pointer;
@@ -75,4 +76,25 @@
 }
 .top-bar .container .container-right span {
   cursor: pointer;
+}
+.welcome {
+  width: 100%;
+  position: relative;
+  text-align: center;
+  z-index: 0;
+}
+.welcome img {
+  width: 100%;
+}
+.welcome .title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.welcome .title .mid {
+  display: flex;
+  justify-content: none;
+  align-items: none;
+  flex-direction: row;
 }
