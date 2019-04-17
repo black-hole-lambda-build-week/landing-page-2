@@ -1,11 +1,12 @@
 .top-bar {
   .width-100();
   .flex(center);
-  position: fixed;
   height: 52px;
-  background-color: rgb(24, 24, 24);
   z-index: 1;
-  border-bottom: 2px solid @blackholePurple;
+  background: @background;
+  opacity: 0.5;
+  border-radius: 52%;
+  border: 5px solid @blackholePurple;
 
   @media (min-width: 1280px) {
     width: 1280px;
@@ -20,7 +21,7 @@
     .flex();
     color: @white;
     letter-spacing: 1px;
-    padding: 0 10px;
+    padding: 0 75px;
     @media (max-width: 1200px) {
       width: 1200px;
     }
@@ -42,8 +43,6 @@
     .logo {
       height: 44px;
       width: 125px;
-      border-top: 2px solid @blackholePurple;
-      border-bottom: 2px solid @blackholePurple;
       border-radius: 30%;
 
       @media (max-width: 500px) {
@@ -52,7 +51,7 @@
       }
     }
     .container-center {
-      .flex(center, center);
+      .flex(space-evenly, center);
       flex: 3;
       font-size: 15px;
       color: @white;
