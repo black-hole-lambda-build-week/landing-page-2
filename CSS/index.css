@@ -128,17 +128,20 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
+  content: "";
   content: none;
 }
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+html {
+  height: 100%;
+}
 .mycontainer {
   width: 100%;
   margin: 0 auto;
-  background: black;
+  background: #010101;
 }
 @media (min-width: 1280px) {
   .mycontainer {
@@ -151,12 +154,40 @@ table {
   }
 }
 .about {
-  height: 720px;
-  background: #313131;
+  color: white;
+  padding-top: 88px;
+  height: 100%;
+  background: #010101;
+  width: 80%;
+  margin: 0 auto;
+}
+@media (max-width: 500px) {
+  .about {
+    width: 414px;
+  }
+}
+.about h2 {
+  font-size: 50px;
+  border-left: 5px solid #6a25f8;
+  border-right: 5px solid #6a25f8;
+  border-radius: 10%;
+  margin-right: 400px;
+}
+@media (max-width: 500px) {
+  .about h2 {
+    font-size: 35px;
+    margin: 7px 5px;
+    text-align: center;
+  }
+}
+.about p {
+  margin: 10px 10px 10px 10px;
+  line-height: 125%;
 }
 .team {
-  height: 720px;
-  background: #1f1f1f;
+  padding-top: 88px;
+  height: 100%;
+  background: #010101;
 }
 .top-bar {
   width: 100%;
@@ -165,9 +196,10 @@ table {
   align-items: none;
   flex-direction: row;
   position: fixed;
-  height: 44px;
+  height: 52px;
   background-color: #181818;
   z-index: 1;
+  border-bottom: 2px solid #6a25f8;
 }
 @media (min-width: 1280px) {
   .top-bar {
@@ -215,8 +247,8 @@ table {
 .top-bar .container .logo {
   height: 44px;
   width: 125px;
-  border-top: 2px solid #6A25F8;
-  border-bottom: 2px solid #6A25F8;
+  border-top: 2px solid #6a25f8;
+  border-bottom: 2px solid #6a25f8;
   border-radius: 30%;
 }
 @media (max-width: 500px) {
@@ -232,16 +264,21 @@ table {
   flex-direction: row;
   flex: 3;
   font-size: 15px;
+  color: white;
 }
-.top-bar .container .container-center span {
+.top-bar .container .container-center a {
   cursor: pointer;
+  text-decoration: none;
+  color: #6a25f8;
   margin-right: 5%;
 }
-.top-bar .container .container-center span:last-child {
+.top-bar .container .container-center a:last-child {
   margin-right: 0;
 }
-.top-bar .container .container-center span:hover {
-  text-decoration: underline;
+.top-bar .container .container-center a:hover {
+  border-left: 5px solid #6a25f8;
+  border-right: 5px solid #6a25f8;
+  border-radius: 30%;
 }
 @media (max-width: 500px) {
   .top-bar .container .container-center {
@@ -256,13 +293,15 @@ table {
   flex: 1;
   font-size: 15px;
 }
-.top-bar .container .container-right span {
+.top-bar .container .container-right a {
+  color: white;
+  text-decoration: none;
   cursor: pointer;
 }
-.top-bar .container .container-right span:last-child {
+.top-bar .container .container-right a:last-child {
   margin-right: 0;
 }
-.top-bar .container .container-right span:hover {
+.top-bar .container .container-right a:hover {
   text-decoration: underline;
 }
 @media (max-width: 500px) {
@@ -282,6 +321,7 @@ table {
 @media (max-width: 500px) {
   .welcome {
     position: relative;
+    padding-top: 88px;
   }
 }
 .welcome video {
@@ -289,8 +329,9 @@ table {
 }
 @media (max-width: 500px) {
   .welcome video {
-    height: 300px;
-    padding-top: 100px;
+    height: 414px;
+    width: 414px;
+    transform: rotate(90deg);
   }
 }
 .welcome .title {
@@ -311,9 +352,10 @@ table {
 }
 @media (max-width: 500px) {
   .welcome .title {
-    font-size: 24px;
+    font-size: 40px;
     height: 65%;
-    top: 35%;
+    width: 100%;
+    top: 33%;
   }
 }
 .welcome .title .top {
