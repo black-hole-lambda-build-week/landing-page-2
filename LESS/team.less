@@ -1,28 +1,33 @@
-.maincontent {
+.team {
+  color: @white;
+  width: 90%;
+  left: 0;
+  right: 0;
+  margin: 25px auto;
 
-    // .width-100();
-    // height: 100%;
-    // position: relative;
-    // text-align: center;
-    // z-index: 0;
+  background: @background;
+  border: 5px solid @blackholePurple;
+  border-radius: 5%;
+  //opacity: 0.5;
 
-    .background {
-        .width-100();
-        height: 100%;
+  @media (max-width: 500px) {
+    border-radius: 100px;
+    width: 90%;
+    height: 750px;
+  }
+
+  .carosel {
+    margin: 20px auto;
+
+    @media (max-width: 500px) {
+      margin: 0 auto;
     }
-
-  .team {
-    color: @white;
-    //padding-top: @navFix;
-    //height: 100%;
-    .width-100();
-    height: 100%;
-    top: 10%;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
     .item {
       text-align: center;
+
+      h2 {
+        font-size: 2.5rem;
+      }
 
       .members {
         display: flex;
@@ -32,13 +37,47 @@
         @media (max-width: 500px) {
           flex-direction: column;
         }
-        .teammember {
-          background: green;
-          width: 48.5%;
-          height: 75%;
+
+        .teamMember {
+          color: #e9e9e9;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+          align-items: center;
+          width: 500px;
+          height: 500px;
+          border-radius: 150px;
+          margin: 100px 0;
+          box-shadow: #7d7b7b 4px 8px 16px;
+          opacity: 1;
+
           @media (max-width: 500px) {
-            width: 90%;
-            height: 50%;
+            margin: 25px auto;
+            width: 300px;
+            height: 300px;
+            border-radius: 100px;
+          }
+
+          .git {
+            width: 35px;
+            position: relative;
+            top: -150px;
+            left: 225px;
+            @media (max-width: 500px) {
+              top: -50px;
+              left: 125px;
+            }
+          }
+
+          .in {
+            width: 50px;
+            position: relative;
+            top: -150px;
+            left: 225px;
+            @media (max-width: 500px) {
+              top: -50px;
+              left: 125px;
+            }
           }
         }
       }

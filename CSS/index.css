@@ -136,8 +136,6 @@ table {
   border-spacing: 0;
 }
 html {
-  height: 100%;
-  width: 100%;
   background: #010101;
   background-image: url("../assets/bg2.jpg") !important;
   background-repeat: no-repeat !important;
@@ -167,7 +165,7 @@ html {
   z-index: 1;
   background: #010101;
   opacity: 0.5;
-  border-radius: 52%;
+  border-radius: 100px;
   border: 5px solid #6a25f8;
 }
 @media (min-width: 1280px) {
@@ -394,40 +392,89 @@ html {
   margin: 10px 10px 10px 10px;
   line-height: 125%;
 }
-.maincontent .background {
-  width: 100%;
-  height: 100%;
-}
-.maincontent .team {
+.team {
   color: whitesmoke;
-  width: 100%;
-  height: 100%;
-  top: 10%;
+  width: 90%;
   left: 0;
   right: 0;
-  margin: 0 auto;
+  margin: 25px auto;
+  background: #010101;
+  border: 5px solid #6a25f8;
+  border-radius: 5%;
 }
-.maincontent .team .item {
+@media (max-width: 500px) {
+  .team {
+    border-radius: 100px;
+    width: 90%;
+    height: 750px;
+  }
+}
+.team .carosel {
+  margin: 20px auto;
+}
+@media (max-width: 500px) {
+  .team .carosel {
+    margin: 0 auto;
+  }
+}
+.team .carosel .item {
   text-align: center;
 }
-.maincontent .team .item .members {
+.team .carosel .item h2 {
+  font-size: 2.5rem;
+}
+.team .carosel .item .members {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
 }
 @media (max-width: 500px) {
-  .maincontent .team .item .members {
+  .team .carosel .item .members {
     flex-direction: column;
   }
 }
-.maincontent .team .item .members .teammember {
-  background: green;
-  width: 48.5%;
-  height: 75%;
+.team .carosel .item .members .teamMember {
+  color: #e9e9e9;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 500px;
+  height: 500px;
+  border-radius: 150px;
+  margin: 100px 0;
+  box-shadow: #7d7b7b 4px 8px 16px;
+  opacity: 1;
 }
 @media (max-width: 500px) {
-  .maincontent .team .item .members .teammember {
-    width: 90%;
-    height: 50%;
+  .team .carosel .item .members .teamMember {
+    margin: 25px auto;
+    width: 300px;
+    height: 300px;
+    border-radius: 100px;
+  }
+}
+.team .carosel .item .members .teamMember .git {
+  width: 35px;
+  position: relative;
+  top: -150px;
+  left: 225px;
+}
+@media (max-width: 500px) {
+  .team .carosel .item .members .teamMember .git {
+    top: -50px;
+    left: 125px;
+  }
+}
+.team .carosel .item .members .teamMember .in {
+  width: 50px;
+  position: relative;
+  top: -150px;
+  left: 225px;
+}
+@media (max-width: 500px) {
+  .team .carosel .item .members .teamMember .in {
+    top: -50px;
+    left: 125px;
   }
 }

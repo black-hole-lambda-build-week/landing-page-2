@@ -42,43 +42,36 @@
     </div>
 
     <div class="maincontent">
-      <!-- <img class="background" src="assets/bg2.jpg"> -->
       <div class="team">
         <div class="carosel">
           <div class="item">
-            <h2>UI Developers</h2>
             <div class="members">
-              <div class="teammember">Hello</div>
-              <div class="teammember">GoodBye</div>
+              <div class="teamMember" data-person="amanda" id="amanda">
+                <h3>Amanda Lane</h3>
+                <h4>UI Developer</h4>
+              </div>
+              <div class="teamMember" data-person="matthew" id="matthew">
+                <h3>Matthew Lewis</h3>
+                <h4>UI Developer</h4>
+              </div>
             </div>
           </div>
           <div class="item">
-            <h2>Front End Devs</h2>
             <div class="members">
-              <div class="teammember">Hello</div>
-              <div class="teammember">GoodBye</div>
+              <div class="teamMember">Curtis Hubbard</div>
+              <div class="teamMember">Will Umstead</div>
             </div>
           </div>
           <div class="item">
-            <h2>Back End Devs</h2>
             <div class="members">
-              <div class="teammember">Hello</div>
-              <div class="teammember">GoodBye</div>
+              <div class="teamMember">Javontay McElroy</div>
+              <div class="teamMember">Alexander Piroumian</div>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <script type="text/javascript">
-      $(document).ready(function() {
-        $(".carosel").slick({
-          dots: true,
-          accessibilty: true,
-          arrows: false,
-          fade: true
-        });
-      });
-    </script>
+    <script type="text/javascript" src="components/carosel.js"></script>
   </body>
 </html>
