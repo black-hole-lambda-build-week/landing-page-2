@@ -12,7 +12,7 @@ let member = document.querySelectorAll(".teamMember");
 
 // An array of socail data to be used for clickable buttons
 let socialData = {
-  amanda: ['https://github.com/amlane', ''],
+  amanda: ['https://github.com/amlane', 'https://www.linkedin.com/in/amanda-lane-40264417b/'],
   matthew: [
     "https://github.com/moddamatt",
     "https://www.linkedin.com/in/mattmorganlewis/"

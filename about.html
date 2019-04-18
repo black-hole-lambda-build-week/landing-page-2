@@ -4,50 +4,106 @@
     <title>Welcome to Blackwhole</title>
     <link rel="stortcut icon" href="./assets/blackhole.png" />
     <link rel="stylesheet" type="text/css" href="./CSS/index.css" />
+
+    <!-- Links to slick for carosel -->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
   </head>
 
   <body class="mycontainer">
     <div class="top-bar">
       <div class="container">
-        <div class="container-left">
+        <div class="container-logo">
           <img
             class="logo"
             src="./assets/blackhole logo colored.png"
             alt="BlackWhole"
           />
         </div>
-        <div class="container-center">
-                <a href="index.html">HOME</a>
-                <a href="about.html">ABOUT</a>
-                <a href="team.html">TEAM</a>
-        </div>
-        <div class="container-right">
-                <a href="https://black-hole-build-week.netlify.com/">Launch</a>
+        <div class="container-nav">
+          <a href="index.html">HOME</a>
+          <a href="about.html">ABOUT</a>
+          <a href="https://black-hole-build-week.netlify.com/">LAUNCH</a>
         </div>
       </div>
     </div>
+
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
+    <div class="about">
+      <h2>What is the Blackhole?</h2>
+      <p>
+        Have you ever had a fit of anger so deep that you needed to release your
+        primal voice? Has a person or a thing ever irritated you so much that
+        you needed to yell it to the world? Enter the Blackhole. The ever
+        gravitating hole that sucks up your pent up anger. Vent into it, yell
+        into it, TYPE IN ALL CAPS IF YOU HAVE TO, release it to the hole and
+        watch it be destroyed in orbit. When you're ready to think about it
+        again the blackhole's orbit will pull it back around to view your rant
+        in full glory.
+      </p>
+
+      <h2>What inspired the blackhole?</h2>
+      <p>
+        Sometimes we humans need to rant. We can and will rant about anything,
+        but sometimes our rants are heard by the wrong people. Our fit of anger
+        can hurt our relationships and land us in a whole heap of trouble. Thus
+        BLACKHOLE was born. The simple app that allows you to rant to strangers
+        on the internet without the repercusions of the real world. Let go of
+        your anger and give it to the hole.
+      </p>
+      <div class="maincontent">
+        <div class="team">
+          <div class="carosel">
+            <div class="item">
+              <div class="members">
+                <div class="teamMember" data-person="amanda" id="amanda">
+                  <h3>Amanda Lane</h3>
+                  <h4>UI Developer</h4>
+                </div>
+                <div class="teamMember" data-person="matthew" id="matthew">
+                  <h3>Matthew Lewis</h3>
+                  <h4>UI Developer</h4>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="members">
+                <div class="teamMember" data-person="curtis" id="curtis">
+                  <h3>Curtis Hubbard</h3>
+                  <h4>Front End</h4>
+                </div>
+                <div class="teamMember" data-person="will" id="will">
+                  <h3>Will Umstead</h3>
+                  <h4>Front End</h4>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="members">
+                <div class="teamMember" data-person="javontay" id="javontay">
+                  <h3>Javontay</h3>
+                  <h4>Back End</h4>
+                </div>
+                <div class="teamMember" data-person="alex" id="alex">
+                  <h3>Alexander Piroumian</h3>
+                  <h4>Back End</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="components/carosel.js"></script>
   </body>
-
-  <div class="about">
-    <h2>What is the Blackhole?</h2>
-    <p>
-      Have you ever had a fit of anger so deep that you needed to release your
-      primal voice? Has a person or a thing ever irritated you so much that you
-      needed to yell it to the world? Enter the Blackhole. The ever gravitating
-      hole that sucks up your pent up anger. Vent into it, yell into it, TYPE IN
-      ALL CAPS IF YOU HAVE TO, release it to the hole and watch it be destroyed
-      in orbit. When you're ready to think about it again the blackhole's orbit
-      will pull it back around to view your rant in full glory.
-    </p>
-
-    <h2>What inspired the blackhole?</h2>
-    <p>
-      Sometimes we humans need to rant. We can and will rant about anything, but
-      sometimes our rants are heard by the wrong people. Our fit of anger can
-      hurt our relationships and land us in a whole heap of trouble. Thus
-      BLACKHOLE was born. The simple app that allows you to rant to strangers on
-      the internet without the repercusions of the real world. Let go of your
-      anger and give it to the hole.
-    </p>
-  </div>
 </html>
