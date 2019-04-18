@@ -411,6 +411,7 @@ html {
 }
 .team .carosel {
   margin: 20px auto;
+  cursor: pointer;
 }
 @media (max-width: 500px) {
   .team .carosel {
