@@ -1,11 +1,13 @@
 html {
-  height: 100%;
+  background: @background;
+  background-image: url("../assets/bg2.jpg") !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+  background-position: center !important;
 }
 
 .mycontainer {
-  width: 100%;
   margin: 0 auto;
-  background: @background;
 
   @media (min-width: 1280px) {
     width: 1280px;
@@ -14,42 +16,4 @@ html {
   @media (max-width: 500px) {
     width: 414px;
   }
-}
-
-.about {
-  color: white;
-  padding-top: @navFix;
-  height: 100%;
-  background: @background;
-  width: 80%;
-  margin: 0 auto;
-
-  @media (max-width: 500px) {
-    width: 414px;
-  }
-
-  h2 {
-    font-size: 50px;
-    border-left: 5px solid @blackholePurple;
-    border-right: 5px solid @blackholePurple;
-    border-radius: 10%;
-    margin-right: 400px;
-
-    @media (max-width: 500px) {
-      font-size: 35px;
-      margin: 7px 5px;
-      text-align: center;
-    }
-  }
-
-  p {
-    margin: 10px 10px 10px 10px;
-    line-height: 125%;
-  }
-}
-
-.team {
-  padding-top: @navFix;
-  height: 100%;
-  background: @background;
 }
