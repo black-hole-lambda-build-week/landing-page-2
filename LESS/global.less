@@ -1,19 +1,16 @@
-html {
+.mycontainer {
+  width: 100%;
+  height: 100%;
+
   background: @background;
   background-image: url("../assets/bg2.jpg") !important;
   background-repeat: no-repeat !important;
   background-attachment: fixed !important;
   background-position: center !important;
-}
+  background-size: cover !important;
 
-.mycontainer {
-  margin: 0 auto;
-
-  @media (min-width: 1280px) {
-    width: 1280px;
-  }
-
-  @media (max-width: 500px) {
-    width: 414px;
+  @media (min-width: @normalMonitor)
+  {
+    background-size: 150% 100%;
   }
 }

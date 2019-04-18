@@ -1,60 +1,42 @@
 .top-bar {
-  .width-100();
   .flex(center);
-  height: 52px;
-  z-index: 1;
+  width: 95%;
+  margin: 0.5rem auto;
   background: @background;
   opacity: 0.5;
   border-radius: 100px;
   border: 5px solid @blackholePurple;
-
-  @media (min-width: 1280px) {
-    width: 1280px;
-  }
-
-  @media (max-width: 500px) {
-    height: 88px;
-  }
-
   .container {
-    .width-100();
-    .flex();
-    color: @white;
-    letter-spacing: 1px;
-    padding: 0 75px;
-    @media (max-width: 1200px) {
-      width: 1200px;
+    @media (min-width: @normalMonitor) {
+      .flex(none, none, row);
+      width: 90%;
     }
 
-    @media (max-width: 500px) {
-      flex-wrap: wrap;
-    }
+    .container-logo {
+      .logo {
+        width: 45rem;
 
-    .container-left {
-      .flex(none, center);
-      flex: 1;
-      font-size: 11px;
-      span {
-        cursor: pointer;
-        margin-right: 25%;
-        font-weight: bold;
+        @media (min-width: @normalMonitor) {
+          width: 15rem;
+          align-self: flex-start;
+        }
       }
     }
-    .logo {
-      height: 44px;
-      width: 125px;
-      border-radius: 30%;
 
-      @media (max-width: 500px) {
-        width: 250px;
-        margin: 0 auto;
-      }
-    }
-    .container-center {
+    .container-nav {
       .flex(space-evenly, center);
-      flex: 3;
-      font-size: 15px;
-      color: @white;
+      font-size: 2.5rem;
+      letter-spacing: 0.5rem;
+
+      @media (min-width: @normalMonitor) {
+        font-size: 1rem;
+        margin-left: 32rem;
+      }
+
+      @media (min-width: @ultraWide) {
+        font-size: 1rem;
+        margin-left: 100rem;
+      }
       a {
         cursor: pointer;
         text-decoration: none;
@@ -64,34 +46,10 @@
           margin-right: 0;
         }
         &:hover {
-          border-left: 5px solid @blackholePurple;
-          border-right: 5px solid @blackholePurple;
-          border-radius: 30%;
+          border-left: 2.5px solid @blackholePurple;
+          border-right: 2.5px solid @blackholePurple;
+          border-radius: 5rem;
         }
-      }
-
-      @media (max-width: 500px) {
-        justify-content: space-evenly;
-      }
-    }
-    .container-right {
-      .flex(flex-end, center);
-      flex: 1;
-      font-size: 15px;
-      a {
-        color: @white;
-        text-decoration: none;
-        cursor: pointer;
-        &:last-child {
-          margin-right: 0;
-        }
-        &:hover {
-          text-decoration: underline;
-        }
-      }
-
-      @media (max-width: 500px) {
-        .flex(center);
       }
     }
   }
