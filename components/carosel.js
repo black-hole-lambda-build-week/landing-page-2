@@ -3,7 +3,9 @@ $(document).ready(function() {
   $(".carosel").slick({
     accessibilty: true,
     autoplay: true,
-    autoplaySpeed: 2000
+    autoplaySpeed: 1250,
+    fade: true,
+    pauseOnHover: true
   });
 });
 
@@ -12,7 +14,10 @@ let member = document.querySelectorAll(".teamMember");
 
 // An array of socail data to be used for clickable buttons
 let socialData = {
-  amanda: ['https://github.com/amlane', 'https://www.linkedin.com/in/amanda-lane-40264417b/'],
+  amanda: [
+    "https://github.com/amlane",
+    "https://www.linkedin.com/in/amanda-lane-40264417b/"
+  ],
   matthew: [
     "https://github.com/moddamatt",
     "https://www.linkedin.com/in/mattmorganlewis/"
@@ -21,11 +26,18 @@ let socialData = {
     "https://github.com/javontaymcelroy",
     "https://www.linkedin.com/in/javontay-mcelroy-663b81bb/"
   ],
-  alex: ['https://github.com/AlexxanderP', 'https://www.linkedin.com/in/alexander-piroumian/'],
+  alex: [
+    "https://github.com/AlexxanderP",
+    "https://www.linkedin.com/in/alexander-piroumian/"
+  ],
   will: ["https://github.com/brellin", "https://www.linkedin.com/in/brellin/"],
   curtis: [
     "https://github.com/Chubbard022",
     "https://www.linkedin.com/in/curtis-hubbard-945764158/"
+  ],
+  matt: [
+    "https://github.com/mattwright42",
+    "https://www.linkedin.com/in/mattbwright/"
   ]
 };
 
